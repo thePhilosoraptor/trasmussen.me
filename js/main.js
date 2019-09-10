@@ -20,53 +20,29 @@ jQuery(document).ready(function( $ ) {
 
   // JavaScript Chart
   var doughnutData = [{
-      value: 70,
+      value: 55,
       color: "#1abc9c"
     },
     {
-      value: 30,
+      value: 45,
       color: "#ecf0f1"
     }
   ];
   var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
 
-  // Bootstrap Chart
+  // C++ Chart
   var doughnutData = [{
-    value: 90,
+    value: 85,
     color: "#1abc9c"
   },
   {
-    value: 10,
+    value: 15,
     color: "#ecf0f1"
   }
   ];
-  var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("cpp").getContext("2d")).Doughnut(doughnutData);
 
-  // WordPress Chart
-  var doughnutData = [{
-    value: 65,
-    color: "#1abc9c"
-  },
-  {
-    value: 35,
-    color: "#ecf0f1"
-  }
-  ];
-  var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
-
-  // HTML Chart
-  var doughnutData = [{
-    value: 80,
-    color: "#1abc9c"
-  },
-  {
-    value: 20,
-    color: "#ecf0f1"
-  }
-  ];
-  var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
-
-  // Photoshop Chart
+  // C# Chart
   var doughnutData = [{
     value: 70,
     color: "#1abc9c"
@@ -76,17 +52,66 @@ jQuery(document).ready(function( $ ) {
     color: "#ecf0f1"
   }
   ];
-  var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("cs").getContext("2d")).Doughnut(doughnutData);
 
-  // Illustrator Chart
+  // C Chart
   var doughnutData = [{
-    value: 50,
+    value: 60,
     color: "#1abc9c"
   },
   {
-    value: 50,
+    value: 40,
     color: "#ecf0f1"
   }
   ];
-  var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("c").getContext("2d")).Doughnut(doughnutData);
+
+  // Java Chart
+  var doughnutData = [{
+    value: 80,
+    color: "#1abc9c"
+  },
+  {
+    value: 20,
+    color: "#ecf0f1"
+  }
+  ];
+  var myDoughnut = new Chart(document.getElementById("java").getContext("2d")).Doughnut(doughnutData);
+
+  // Object-Oriented Programming Chart
+  var doughnutData = [{
+    value: 90,
+    color: "#1abc9c"
+  },
+  {
+    value: 10,
+    color: "#ecf0f1"
+  }
+  ];
+  var myDoughnut = new Chart(document.getElementById("oop").getContext("2d")).Doughnut(doughnutData);
+
+  // Agile
+  var doughnutData = [{
+    value: 75,
+    color: "#1abc9c"
+  },
+  {
+    value: 25,
+    color: "#ecf0f1"
+  }
+  ];
+  var myDoughnut = new Chart(document.getElementById("agile").getContext("2d")).Doughnut(doughnutData);
+
+  // Algorithm Development
+  var doughnutData = [{
+    value: 85,
+    color: "#1abc9c"
+  },
+  {
+    value: 15,
+    color: "#ecf0f1"
+  }
+  ];
+  var myDoughnut = new Chart(document.getElementById("algo").getContext("2d")).Doughnut(doughnutData);
+
 });
