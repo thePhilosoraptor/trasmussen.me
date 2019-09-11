@@ -76,7 +76,19 @@ jQuery(document).ready(function( $ ) {
     color: "#ecf0f1"
   }
   ];
-  var myDoughnut = new Chart(document.getElementById("java").getContext("2d")).Doughnut(doughnutData);
+    var myDoughnut = new Chart(document.getElementById("java").getContext("2d")).Doughnut(doughnutData);
+
+  // Python
+  var doughnutData = [{
+    value: 30,
+    color: "#1abc9c"
+  },
+  {
+    value: 70,
+    color: "#ecf0f1"
+  }
+  ];
+  var myDoughnut = new Chart(document.getElementById("python").getContext("2d")).Doughnut(doughnutData);
 
   // Object-Oriented Programming Chart
   var doughnutData = [{
