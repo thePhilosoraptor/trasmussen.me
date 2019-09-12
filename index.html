@@ -412,11 +412,26 @@
 
                     <div class="col-lg-6">
                         <div id="minesweptCodeEditor" style="padding-left: 10px;"></div>
+                        <div>
+                            <input type="file" onchange="loadMinesweptFiles(this.files);" />
+                        </div>
+
                         <script>
-                            var minesweptCode = CodeMirror(document.getElementById("minesweptCodeEditor"), {
+                            var minesweptCodeMirror = CodeMirror(document.getElementById("minesweptCodeEditor"), {
                                 lineNumbers: true,
                                 readOnly: true
                             });
+
+                            function loadMinesweptFiles(files) {
+                                if (files.length == 1) {
+                                    document.title = escape(files[0].name);
+                                    var reader = new FileReader();
+                                    reader.onload = function (e) {
+                                        minesweptCodeMirror.setValue(e.target.result);
+                                    };
+                                    reader.readAsText(files[0]);
+                                }
+                            }
                         </script>
                     </div>
                 </div>
