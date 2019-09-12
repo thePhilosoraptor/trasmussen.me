@@ -120,6 +120,73 @@
         <!--/ #intro -->
     </section>
 
+    <section id="work" name="work">
+        <!--RECENT PROJECTS DESCRIPTION -->
+
+        <div class="container desc">
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-1">
+                    <h5>RECENT PROJECTS</h5>
+                </div>
+                <div class="col-lg-6">
+                    <p>
+                        <t>Mineswept</t><br />
+                        This is my Minesweeper AI project. I wanted to develop an AI that beats Minesweeper as quickly as possible without brute forcing.
+                        This involved creating algorithms that I would use to play the game and then implementing them as efficiently as possible.
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="webgl-content" style="padding-top: 442px;">
+                            <div id="unityContainer" style="width: 640px; height: 400px"></div>
+                            <div class="footer">
+                                <div class="webgl-logo"></div>
+                                <div class="" onclick="unityInstance.SetFullscreen(1)"></div>
+                                <div class="title">Mineswept</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div id="minesweptCodeEditor" style="padding-left: 10px;"></div>
+                        <div>
+                            <input type="file" onchange="loadMinesweptFiles(this.files);" />
+                        </div>
+
+                        <script>
+                            var minesweptCodeMirror = CodeMirror(document.getElementById("minesweptCodeEditor"), {
+                                lineNumbers: true,
+                                readOnly: true
+                            });
+
+                            function loadMinesweptFiles(files) {
+                                if (files.length == 1) {
+                                    document.title = escape(files[0].name);
+                                    var reader = new FileReader();
+                                    reader.onload = function (e) {
+                                        minesweptCodeMirror.setValue(e.target.result);
+                                    };
+                                    reader.readAsText(files[0]);
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+                <!--/.row-->
+
+                <div class="w-100"></div>
+
+
+            </div>
+            <!--/.row -->
+
+            <br />
+            <br />
+        </div>
+        <!--/.container -->
+    </section>
+    <!--/.recent projects-->
 
     <section id="resume" name="resume">
         <!--EDUCATION DESCRIPTION -->
@@ -163,8 +230,9 @@
             <div class="col-lg-6">
                 <p>
                     <t>Banquet Server, Server</t><br />
-                    <more> Legacy Hotel at IMG Academy <br />
-                           Bradenton, FL <br />
+                    <more>
+                        Legacy Hotel at IMG Academy <br />
+                        Bradenton, FL <br />
                     </more>
                 </p>
                 <p>
@@ -180,8 +248,9 @@
             <div class="col-lg-6 col-lg-offset-3">
                 <p>
                     <t>Banquet Server</t><br />
-                    <more> The Hyatt Regency <br />
-                           Sarasota, FL <br />
+                    <more>
+                        The Hyatt Regency <br />
+                        Sarasota, FL <br />
                     </more>
                 </p>
                 <p>
@@ -197,8 +266,9 @@
             <div class="col-lg-6 col-lg-offset-3">
                 <p>
                     <t>Banquet Server</t><br />
-                    <more> The Westin <br /> 
-                           Sarasota, FL <br />
+                    <more>
+                        The Westin <br />
+                        Sarasota, FL <br />
                     </more>
                 </p>
                 <p>
@@ -213,9 +283,10 @@
 
             <div class="col-lg-6 col-lg-offset-3">
                 <p>
-                    <t>Server</t><br /> 
-                    <more> The Stanford Grill <br /> 
-                           Columbia, MD <br />
+                    <t>Server</t><br />
+                    <more>
+                        The Stanford Grill <br />
+                        Columbia, MD <br />
                     </more>
                 </p>
                 <p>
@@ -230,9 +301,10 @@
 
             <div class="col-lg-6 col-lg-offset-3">
                 <p>
-                    <t>Head of Gutter Sales Department</t><br /> 
-                    <more> All Around Gutters <br />
-                           Timonium, MD <br />
+                    <t>Head of Gutter Sales Department</t><br />
+                    <more>
+                        All Around Gutters <br />
+                        Timonium, MD <br />
                     </more>
                 </p>
                 <p>
@@ -247,9 +319,10 @@
 
             <div class="col-lg-6 col-lg-offset-3">
                 <p>
-                    <t>Customer Service Associate</t><br /> 
-                    <more> The Men's Wearhouse <br />
-                           Columbia, MD <br />
+                    <t>Customer Service Associate</t><br />
+                    <more>
+                        The Men's Wearhouse <br />
+                        Columbia, MD <br />
                     </more>
                 </p>
                 <p>
@@ -267,7 +340,6 @@
         <hr />
     </div>
     <!--/.container -->
-
 
     <!--AWARDS DESCRIPTION -->
     <!--
@@ -380,74 +452,6 @@
         <!--/.container -->
     </div>
     <!--/ #skillswrap -->
-
-
-    <section id="work" name="work">
-        <!--RECENT PROJECTS DESCRIPTION -->
-
-        <div class="container desc">
-            <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
-                    <h5>RECENT PROJECTS</h5>
-                </div>
-                <div class="col-lg-6">
-                    <p>
-                        <t>Mineswept</t><br />
-                        This is my Minesweeper AI project. I wanted to develop an AI that beats Minesweeper as quickly as possible without brute forcing.
-                        This involved creating algorithms that I would use to pla the game and then implementing them as efficiently as possible.
-                    </p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="webgl-content" style="padding-top: 445px;">
-                            <div id="unityContainer" style="width: 640px; height: 400px"></div>
-                            <div class="footer">
-                                <div class="webgl-logo"></div>
-                                <div class="" onclick="unityInstance.SetFullscreen(1)"></div>
-                                <div class="title">Mineswept</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div id="minesweptCodeEditor" style="padding-left: 10px;"></div>
-                        <div>
-                            <input type="file" onchange="loadMinesweptFiles(this.files);" />
-                        </div>
-
-                        <script>
-                            var minesweptCodeMirror = CodeMirror(document.getElementById("minesweptCodeEditor"), {
-                                lineNumbers: true,
-                                readOnly: true
-                            });
-
-                            function loadMinesweptFiles(files) {
-                                if (files.length == 1) {
-                                    document.title = escape(files[0].name);
-                                    var reader = new FileReader();
-                                    reader.onload = function (e) {
-                                        minesweptCodeMirror.setValue(e.target.result);
-                                    };
-                                    reader.readAsText(files[0]);
-                                }
-                            }
-                        </script>
-                    </div>
-                </div>
-                <!--/.row-->
-
-                <div class="w-100"></div>
-
-
-            </div>
-            <!--/.row -->
-
-            <br />
-            <br />
-        </div>
-        <!--/.container -->
-    </section>
 
     <section id="contact" name="contact">
         <!--FOOTER DESCRIPTION -->
