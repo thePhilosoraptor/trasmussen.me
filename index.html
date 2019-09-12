@@ -397,23 +397,21 @@
                         This involved creating algorithms that I would use to pla the game and then implementing them as efficiently as possible.
                     </p>
                 </div>
-                
+
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="mineswept-spacer">
-                            <div class="webgl-content">
-                                <div id="unityContainer" style="width: 640px; height: 400px"></div>
-                                <div class="footer">
-                                    <div class="webgl-logo"></div>
-                                    <div class="" onclick="unityInstance.SetFullscreen(1)"></div>
-                                    <div class="title">Mineswept</div>
-                                </div>
+                        <div class="webgl-content" style="padding-top: 445px;">
+                            <div id="unityContainer" style="width: 640px; height: 400px"></div>
+                            <div class="footer">
+                                <div class="webgl-logo"></div>
+                                <div class="" onclick="unityInstance.SetFullscreen(1)"></div>
+                                <div class="title">Mineswept</div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-6">
-                        <div id="minesweptCodeEditor"></div>
+                        <div id="minesweptCodeEditor" style="padding-left: 10px;"></div>
                         <script>
                             var minesweptCode = CodeMirror(document.getElementById("minesweptCodeEditor"), {
                                 lineNumbers: true,
