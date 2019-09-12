@@ -41,6 +41,11 @@
         var unityInstance = UnityLoader.instantiate("unityContainer", "lib/mineswept/Build/Web.json", { onProgress: UnityProgress });
     </script>
 
+    <!--CodeMirror Files-->
+    <script src="lib/CodeMirror/codemirror.js"></script>
+    <link rel="stylesheet" href="lib/CodeMirror/codemirror.css" />
+    <script src="lib/CodeMirror/mode/clike/clike.js"></script>
+
 </head>
 
 <body data-spy="scroll" data-offset="64" data-target="#section-topbar">
@@ -408,10 +413,22 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-lg-6">
+                        <div id="minesweptCodeEditor"></div>
+                        <script>
+                            var minesweptCode = CodeMirror(document.getElementById("minesweptCodeEditor"), {
+                                lineNumbers: true,
+                                readOnly: true
+                            });
+                        </script>
+                    </div>
                 </div>
                 <!--/.row-->
 
                 <div class="w-100"></div>
+
+
             </div>
             <!--/.row -->
 
