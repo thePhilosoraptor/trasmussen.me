@@ -56,11 +56,11 @@ jQuery(document).ready(function( $ ) {
 
   // C Chart
   var doughnutData = [{
-    value: 60,
+    value: 55,
     color: "#1abc9c"
   },
   {
-    value: 40,
+    value: 45,
     color: "#ecf0f1"
   }
   ];
