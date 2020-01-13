@@ -92,11 +92,11 @@ jQuery(document).ready(function( $ ) {
 
   // Object-Oriented Programming Chart
   var doughnutData = [{
-    value: 90,
+    value: 95,
     color: "#1abc9c"
   },
   {
-    value: 10,
+    value: 05,
     color: "#ecf0f1"
   }
   ];
@@ -116,11 +116,11 @@ jQuery(document).ready(function( $ ) {
 
   // Algorithm Development
   var doughnutData = [{
-    value: 85,
+    value: 90,
     color: "#1abc9c"
   },
   {
-    value: 15,
+    value: 10,
     color: "#ecf0f1"
   }
   ];
